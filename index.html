@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy 27th Birthday, Tapas!</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- WELCOME SCREEN -->
+<div id="welcome">
+  <p class="w-small">A little something special for</p>
+  <h1 class="w-name">TAPAS ACHARJEE</h1>
+  <p class="w-big">Happy 27th Birthday!</p>
+  <button id="enterBtn" class="btn">ENTER</button>
+</div>
+
+<div id="leaves" aria-hidden="true"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<button id="musicBtn" class="music" aria-label="Play or pause music">♪</button>
+<audio id="bgm" loop preload="none"><source src="assets/music/birthday.mp3" type="audio/mpeg"></audio>
+
+<main id="site" class="hidden">
+
+<section class="sec hero" id="intro">
+  <div class="wrap">
+    <p class="kicker">Today belongs to</p>
+    <h2 class="mega">Tapas<br>Acharjee</h2>
+    <p class="age"><span>27</span> years of being brilliant</p>
+    <p class="sub">Scroll down. Every section is for you.</p>
+  </div>
+</section>
+
+<section class="sec letter" id="letter">
+  <div class="wrap">
+    <h2 class="title">A Letter For You</h2>
+    <div class="letter-grid">
+  <figure class="letter-photo reveal">
+    <div class="lp-frame"><img src="assets/photos/photo1.jpg.jpeg" alt="Tapas" onerror="this.style.display='none'"></div>
+    <figcaption>Tapas</figcaption>
+  </figure>
+    <div class="paper reveal">
+      <p>Dear Tapas,</p>
+      <p> Happy Birthday, Dada! 🎂</p>
+
+<p> Well, congratulations! You've officially turned 27. Getting older, but don't worry, you still have a long way to go before becoming a boring uncle. 😂
+
+Another year of tolerating my nonsense, listening to my random talks and dealing with all the usual  drama. Honestly, you deserve an award for that.
+
+Jokes apart, I hope this year brings you lots of happiness, success, good health and, most importantly, enough money to treat me occasionally. Don't forget that last part!
+
+Keep being the same annoying, funny and wonderful brother you are.
+
+Enjoy your day, Dada. And remember, you're 27 now, so act maturely.
+
+Just kidding. Nobody expects that from you. 😂❤️
+
+**Happy Birthday once again!**
+ </p>
+      <p>Happy birthday!</p>
+      <p class="sign">— Your brother, Abhijeet</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="sec gallery" id="gallery">
+  <div class="wrap wide">
+    <h2 class="title">Frames of You</h2>
+    <div id="masonry"></div>
+  </div>
+</section>
+
+<section class="sec cinema" id="videoSection">
+  <div class="wrap wide">
+    <p class="now">★ Now Showing ★</p>
+    <h2 class="title">Moving Moments</h2>
+    <div id="videos"></div>
+  </div>
+</section>
+
+<section class="sec hof" id="timeline">
+  <div class="wrap wide">
+    <span class="hof-badge">Class of 28 · Inducted</span>
+    <h2 class="title">The Hall of Fame</h2>
+    <p class="hof-sub">True Football Fan!!!.</p>
+
+          <div class="hof-grid">
+      <div class="hcard reveal" tabindex="0" role="button" aria-label="Reveal award 1">
+        <div class="hcard-in">
+          <div class="hface hfront"><span class="no">AWARD 01</span><div class="q">?</div><p>Tap to reveal</p></div>
+          <div class="hface hback">
+           <div class="hphoto"><img src="assets/photos/hof1.jpg" alt="" onerror="this.parentNode.classList.add('nophoto')"><span class="ico">🤡</span></div>
+            <h3>Hall of Shame</h3><div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hcard reveal" tabindex="0" role="button" aria-label="Reveal award 2">
+        <div class="hcard-in">
+          <div class="hface hfront"><span class="no">AWARD 02</span><div class="q">?</div><p>Tap to reveal</p></div>
+          <div class="hface hback">
+           <div class="hphoto"><img src="assets/photos/hof2.jpg" alt="" onerror="this.parentNode.classList.add('nophoto')"><span class="ico">🐐</span></div>
+            <h3>Trophy for the GOAT</h3><div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hcard reveal" tabindex="0" role="button" aria-label="Reveal award 3">
+        <div class="hcard-in">
+          <div class="hface hfront"><span class="no">AWARD 03</span><div class="q">?</div><p>Tap to reveal</p></div>
+          <div class="hface hback">
+            <div class="hphoto"><img src="assets/photos/hof3.jpg" alt="" onerror="this.parentNode.classList.add('nophoto')"><span class="ico">🔴</span></div>
+            <h3>Manchester United Supporter</h3><div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hcard reveal" tabindex="0" role="button" aria-label="Reveal award 4">
+        <div class="hcard-in">
+          <div class="hface hfront"><span class="no">AWARD 04</span><div class="q">?</div><p>Tap to reveal</p></div>
+          <div class="hface hback">
+            <div class="hphoto"><img src="assets/photos/hof4.jpg" alt="" onerror="this.parentNode.classList.add('nophoto')"><span class="ico">🏆</span></div>
+            <h3>Certified Legend</h3><div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="tl" hidden></div>
+  </div>
+</section>
+
+<section class="sec funny" id="funny">
+  <div class="wrap wide">
+    <h2 class="title">Funny Moments &amp; Inside Jokes</h2>
+    <div id="funnyGrid" class="grid"></div>
+  </div>
+</section>
+
+<section class="sec special" id="special">
+  <div class="wrap wide">
+    <h2 class="title">Why You're Special</h2>
+    <div id="specialGrid" class="grid"></div>
+  </div>
+</section>
+
+<section class="sec twenty8" id="things">
+  <div class="wrap wide">
+    <h2 class="title">27 Things About You</h2>
+    <p class="hint">Tap a number to flip it.</p>
+    <div id="thingsGrid"></div>
+  </div>
+</section>
+
+<section class="sec wish" id="wish">
+  <div class="wrap">
+    <h2 class="title light">Make a Wish!</h2>
+    <p class="light">Close your eyes, make a wish and blow out the candles.</p>
+    <div class="cake">
+      <div id="candles"></div>
+      <div class="tier t1"></div><div class="tier t2"></div><div class="plate"></div>
+    </div>
+    <button id="blowBtn" class="btn">Blow the Candles</button>
+    <p id="wishMsg" class="wish-msg">Your wish is on its way!</p>
+  </div>
+</section>
+
+<section class="sec secret" id="secret">
+  <div class="wrap narrow">
+    <h2 class="title">A Secret Surprise</h2>
+    <button id="secretBtn" class="btn">Open Your Surprise</button>
+    <div id="secretBox" class="secret-box"><p id="secretText"></p></div>
+  </div>
+</section>
+<section class="sec transfer hidden" id="transfer">
+  <div class="wrap">
+    <h2 class="title light">Your Dream Transfer Has Been Approved!</h2>
+
+    <div id="envStage" class="env-stage">
+      <div id="envelope" class="envelope">
+        <div class="env-letter"></div>
+        <div class="env-body"></div>
+        <div class="env-flap"></div>
+        <div class="env-seal">★</div>
+        <p class="env-text">A Special Offer Has Arrived</p>
+      </div>
+      <button id="openContract" class="btn">Open Your Contract</button>
+    </div>
+
+    <div id="contractWrap" class="contract-wrap">
+      <article class="contract">
+        <div class="ct-band"></div>
+        <div class="ct-head">
+          <img class="crest" src="assets/photos/manutd-logo.svg" alt="Manchester United crest">           
+          <div>
+            <h3>MANCHESTER UNITED FOOTBALL CLUB CONTRACT</h3>
+            <p class="ct-ref">Official Player Agreement · Ref. MUFC/27/TA · Official Squad Registration</p>
+          </div>
+        </div>
+
+        <p class="ct-intro">This agreement is made between <b>Manchester United Football Club</b> and <b>Tapas Acharjee.</b></p>
+
+        <dl class="ct-rows">
+          <div><dt>Player Name</dt><dd>Tapas Acharjee</dd></div>
+          <div><dt>Squad Number</dt><dd>27</dd></div>
+          <div><dt>Position</dt><dd>AMF</dd></div>
+          <div><dt>Contract Duration</dt><dd>Lifetime</dd></div>
+          <div><dt>Transfer Fee</dt><dd>ONE BIRYANI TO YOUR BROTHER</dd></div>
+          <div><dt>Weekly Salary</dt><dd>$137K</dd></div>
+          <div class="clause"><dt>Special Clause</dt><dd>Must continue supporting Manchester United.</dd></div>
+        </dl>
+
+        <div class="ct-stmt">
+          <b>Official Statement</b>
+          <p>“Manchester United is delighted to announce the signing of Tapas Acharjee on a lifetime contract. His dedication, loyalty and ability to survive every football season make him a valuable addition to the official squad.”</p>
+        </div>
+
+        <p class="ct-small">Small print: the cake must be shared, and candle blowing is compulsory.</p>
+
+        <div class="ct-sign">
+          <div><span class="sig club">Manchester United</span><i></i><small>Club Representative: Manchester United</small></div>
+          <div><span id="sig" class="sig">Tapas Acharjee</span><i></i><small>Player: Tapas Acharjee</small></div>
+        </div>
+        <div id="stamp" class="stamp">APPROVED</div>
+      </article>
+
+      <button id="signBtn" class="btn">Sign Contract</button>
+      <div id="welcomeTeam" class="welcome-team">WELCOME TO THE TEAM!</div>
+    </div>
+  </div>
+</section>
+<section class="sec count" id="countdown">
+  <div class="wrap">
+    <h2 class="title">Countdown To The Next Birthday</h2>
+    <div id="cd" class="cd"></div>
+  </div>
+</section>
+
+<section class="sec finale" id="finale">
+  <div class="wrap">
+    <h2 class="mega small">HAPPY 27TH<br>BIRTHDAY, TAPAS!</h2>
+    <p id="finalMsg" class="final-msg"></p>
+    <button id="replayBtn" class="btn">Replay Celebration</button>
+  </div>
+</section>
+
+</main>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button class="lb-x" aria-label="Close">×</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb-nav lb-next" aria-label="Next">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
